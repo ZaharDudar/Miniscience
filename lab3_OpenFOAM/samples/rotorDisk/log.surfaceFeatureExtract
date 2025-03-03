@@ -1,0 +1,137 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _9bfe8264-20241212 OPENFOAM=2406 patch=241212 version=2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureExtract
+Date   : Mar 03 2025
+Time   : 13:00:29
+Host   : DESKTOP-G7IOTQ0
+PID    : 25045
+I/O    : uncollated
+Case   : /home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : fixed.obj
+Output       : fixed
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 5012 in 3 region(s)
+Vertices     : 2508
+Bounding Box : (-1.25 -2 -1.25) (1.25 2 1.25)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 0
+    edges  : 2508
+    of which
+        region edges   : 2508
+        external edges : 0
+        internal edges : 0
+
+Final Feature set:
+    points : 2508
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 2508
+    edges  : 2508
+    of which
+        external edges     : 2508
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed"
+Writing 0 convex feature points to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_convexFeaturePts.obj"
+Writing 0 concave feature points to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_mixedFeaturePtsStructure.obj"
+Writing 2508 external edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_externalEdges.obj"
+Writing 0 internal edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_internalEdges.obj"
+Writing 0 flat edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_flatEdges.obj"
+Writing 0 open edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_openEdges.obj"
+Writing 0 multiple edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_multipleEdges.obj"
+Writing 2508 region edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_regionEdges.obj"
+Writing 2508 edge directions to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/fixed_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/triSurface/fixed.eMesh"
+Surfaces     : rotatingZone.obj
+Output       : rotatingZone
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 3964 in 1 region(s)
+Vertices     : 1984
+Bounding Box : (-0.25 0 -0.25) (0.25 0.01 0.25)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 408
+    edges  : 2304
+    of which
+        region edges   : 0
+        external edges : 1984
+        internal edges : 320
+
+Final Feature set:
+    points : 1984
+    of which
+        convex             : 408
+        concave            : 0
+        mixed              : 0
+        non-feature        : 1576
+    edges  : 2304
+    of which
+        external edges     : 2304
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone"
+Writing 408 convex feature points to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_convexFeaturePts.obj"
+Writing 0 concave feature points to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_mixedFeaturePtsStructure.obj"
+Writing 2304 external edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_externalEdges.obj"
+Writing 0 internal edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_internalEdges.obj"
+Writing 0 flat edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_flatEdges.obj"
+Writing 0 open edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_openEdges.obj"
+Writing 0 multiple edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_multipleEdges.obj"
+Writing 0 region edges to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_regionEdges.obj"
+Writing 2304 edge directions to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/extendedFeatureEdgeMesh/rotatingZone_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/zahar/ct/Miniscience/lab3_OpenFOAM/samples/rotorDisk/constant/triSurface/rotatingZone.eMesh"
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+End
+
